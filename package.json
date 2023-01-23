@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/server.js"
+    "start": "nodemon ./src/server.js",
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aNdr3W03/Bookshelf-API.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrew Benedictus Jamesie",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aNdr3W03/Bookshelf-API/issues"
@@ -20,5 +21,11 @@
   "dependencies": {
     "@hapi/hapi": "^21.2.0",
     "nanoid": "^3.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.20"
   }
 }
