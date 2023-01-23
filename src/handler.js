@@ -83,7 +83,7 @@ const getAllBooksHandler = (request, h) => {
   let bookshelf = books;
 
   if (name !== undefined) {
-    bookshelf = bookshelf.filter((book) => book.name.toLowerCase() === name.toLowerCase());
+    bookshelf = bookshelf.filter((book) => book.name.toLowerCase().includes(name.toLowerCase()));
   }
 
   if (reading !== undefined) {
