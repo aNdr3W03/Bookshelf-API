@@ -12,6 +12,6 @@
     },
     "rules": {
         "no-console": "off",
-        "linebreak-style": process.env.NODE_ENV === 'prod' ? "unix" : "windows"
+        "linebreak-style": 0
     }
 }

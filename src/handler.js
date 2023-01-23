@@ -10,7 +10,7 @@ const addBookHandler = (request, h) => {
     publisher,
     pageCount,
     readPage,
-    reading
+    reading,
   } = request.payload;
 
   if (name === undefined) {
@@ -87,11 +87,11 @@ const getAllBooksHandler = (request, h) => {
   }
 
   if (reading !== undefined) {
-    bookshelf = bookshelf.filter((book) => book.reading === !!Number(reading));
+    bookshelf = bookshelf.filter((book) => Number(book.reading) === Number(reading));
   }
 
   if (finished !== undefined) {
-    bookshelf = bookshelf.filter((book) => book.finished === !!Number(finished));
+    bookshelf = bookshelf.filter((book) => Number(book.finished) === Number(finished));
   }
 
   const response = h.response({
@@ -104,7 +104,7 @@ const getAllBooksHandler = (request, h) => {
       })),
     },
   });
-  
+
   response.code(200);
   return response;
 };
@@ -143,11 +143,11 @@ const editBookByIdHandler = (request, h) => {
     readPage,
     reading,
   } = request.payload;
-  
+
   const updatedAt = new Date().toISOString();
   const index = books.findIndex((book) => book.id === id);
   const finished = (pageCount === readPage);
-  
+
   if (name === undefined) {
     const response = h.response({
       status: 'fail',
@@ -187,7 +187,7 @@ const editBookByIdHandler = (request, h) => {
       status: 'success',
       message: 'Buku berhasil diperbarui',
     });
-    
+
     response.code(200);
     return response;
   }
