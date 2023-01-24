@@ -12,16 +12,10 @@
       "dest": "/src/server.js"
     }
   ],
-  "rewrites": [
+  "redirects": [
     {
-      "src": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "bookshelf-api-andrewbj.vercel.app"
-        }
-      ],
-      "dest": "/books/:path*"
+      "source": "/",
+      "destination": "/books"
     }
   ]
 }
