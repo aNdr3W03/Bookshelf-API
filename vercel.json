@@ -9,13 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/src/server.js"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/books"
+      "dest": "/books"
     }
   ]
 }
