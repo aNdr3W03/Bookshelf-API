@@ -4,7 +4,8 @@ Build a RESTful API with web services using JavaScript, Node.js, Node Package Ma
 
 ## Deployment
 
-You can see the Bookshelf API deployment at the following link, [bookshelf-api-andrewbj.vercel.app/books](https://bookshelf-api-andrewbj.vercel.app/books "Bookshelf API").
+You can see the Bookshelf API deployment at the following link,  
+[bookshelf-api-andrewbj.vercel.app/books](https://bookshelf-api-andrewbj.vercel.app/books "Bookshelf API").
 
 ## Installation
 
@@ -61,7 +62,7 @@ You can see the files used to perform the API testing using Postman at the follo
 
 ### 1. Add Book
 
-Request:
+**Request:**
 - Method: `POST`
 - Endpoint: `/books`
 - Body:
@@ -78,7 +79,7 @@ Request:
 	}
 	```
 
-Response:
+**Response:**
 ```json
 {
   "status": string,
@@ -91,11 +92,11 @@ Response:
 
 ### 2. Get All Books
 
-Request:
+**Request:**
 - Method: `GET`
 - Endpoint: `/books`
 
-Response:
+**Response:**
 ```json
 {
   "status": string,
@@ -113,11 +114,11 @@ Response:
 
 ### 3. Get Book Detail
 
-Request:
+**Request:**
 - Method: `GET`
 - Endpoint: `/books/{id}`
 
-Response:
+**Response:**
 ```json
 {
   "status": string,
@@ -146,7 +147,7 @@ Response:
 
 ### 4. Update Book
 
-Request:
+**Request:**
 - Method: `PUT`
 - Endpoint: `/books/{id}`
 - Body:
@@ -163,7 +164,7 @@ Request:
 	}
 	```
 
-Response:
+**Response:**
 ```json
 {
   "status": string,
@@ -173,11 +174,11 @@ Response:
 
 ### 5. Delete Book
 
-Request:
+**Request:**
 - Method: `DELETE`
 - Endpoint: `/books/{id}`
 
-Response:
+**Response:**
 ```json
 {
   "status": string,
