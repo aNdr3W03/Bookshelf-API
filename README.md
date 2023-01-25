@@ -39,3 +39,8 @@ You can see the Bookshelf API deployment at the following link, [bookshelf-api-a
 - [ESLint (Airbnb Style)](https://www.npmjs.com/package/eslint-config-airbnb "ESLint Airbnb Style")
 - [nodemon](https://www.npmjs.com/package/nodemon "nodemon")
 
+## Run ESLint
+
+```bash
+npx eslint .
+```
