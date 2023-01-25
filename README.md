@@ -89,3 +89,25 @@ Response:
 }
 ```
 
+### 2. Get All Books
+
+Request:
+- Method: `GET`
+- Endpoint: `/books`
+
+Response:
+```json
+{
+  "status": string,
+  "data": {
+    "books": [
+      {
+        "id": string,
+        "name": string,
+        "publisher": string
+      }
+    ]
+  }
+}
+```
+
