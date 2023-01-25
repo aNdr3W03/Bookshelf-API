@@ -31,3 +31,11 @@ You can see the Bookshelf API deployment at the following link, [bookshelf-api-a
 5. Open on localhost port 5000, [localhost:5000/books](http://localhost:5000/books).
 
 6. Stop the server by `ctrl + c`.
+
+## Dependency
+
+- [Hapi](https://hapi.dev "Hapi Framework")
+- [nanoid](https://www.npmjs.com/package/nanoid "Nano ID")
+- [ESLint (Airbnb Style)](https://www.npmjs.com/package/eslint-config-airbnb "ESLint Airbnb Style")
+- [nodemon](https://www.npmjs.com/package/nodemon "nodemon")
+
