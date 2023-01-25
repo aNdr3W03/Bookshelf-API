@@ -57,3 +57,35 @@ If you want to see the results of the API testing with Postman in the form of a 
 
 You can see the files used to perform the API testing using Postman at the following link, [collection](https://raw.githubusercontent.com/aNdr3W03/Bookshelf-API/main/Postman/Bookshelf%20API%20Test.postman_collection.json "Postman Bookshelf API Test Collection") and [environment](https://raw.githubusercontent.com/aNdr3W03/Bookshelf-API/main/Postman/Bookshelf%20API%20Test.postman_environment.json "Postman Bookshelf API Test Environment").
 
+## Bookshelf API Description
+
+### 1. Add Book
+
+Request:
+- Method: `POST`
+- Endpoint: `/books`
+- Body:
+	```json
+	{
+	  "name": string,
+	  "year": number,
+	  "author": string,
+	  "summary": string,
+	  "publisher": string,
+	  "pageCount": number,
+	  "readPage": number,
+	  "reading": boolean
+	}
+	```
+
+Response:
+```json
+{
+  "status": string,
+  "message": string,
+  "data": {
+    "bookId": string
+  }
+}
+```
+
