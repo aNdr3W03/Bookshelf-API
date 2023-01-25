@@ -144,3 +144,30 @@ Response:
 }
 ```
 
+### 4. Update Book
+
+Request:
+- Method: `PUT`
+- Endpoint: `/books/{id}`
+- Body:
+	```json
+	{
+	  "name": string,
+	  "year": number,
+	  "author": string,
+	  "summary": string,
+	  "publisher": string,
+	  "pageCount": number,
+	  "readPage": number,
+	  "reading": boolean
+	}
+	```
+
+Response:
+```json
+{
+  "status": string,
+  "message": string
+}
+```
+
