@@ -48,7 +48,7 @@ npx eslint .
 
 ## Postman API Testing
 
-API testing is done using Postman. There are a total of 104 tests consisting of 74 mandatory tests and 30 optional tests, with POST, GET, PUT, and DELETE methods.
+API testing is done using Postman. There are a total of 104 tests consisting of 74 mandatory tests and 30 optional tests, with `POST`, `GET`, `PUT`, and `DELETE` methods.
 
 This is the results of the API testing with Postman.
 
