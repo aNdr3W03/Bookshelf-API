@@ -171,3 +171,16 @@ Response:
 }
 ```
 
+### 5. Delete Book
+
+Request:
+- Method: `DELETE`
+- Endpoint: `/books/{id}`
+
+Response:
+```json
+{
+  "status": string,
+  "message": string
+}
+```
