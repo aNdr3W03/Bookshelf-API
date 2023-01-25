@@ -111,3 +111,36 @@ Response:
 }
 ```
 
+### 3. Get Book Detail
+
+Request:
+- Method: `GET`
+- Endpoint: `/books/{id}`
+
+Response:
+```json
+{
+  "status": string,
+  "data": {
+    "book": {
+      "id": string,
+      "name": string,
+      "publisher": string,
+
+      "id": string,
+      "name": string,
+      "year": year,
+      "author": string,
+      "summary": string,
+      "publisher": string,
+      "pageCount": number,
+      "readPage": number,
+      "finished": boolean,
+      "reading": boolean,
+      "insertedAt": date,
+      "updatedAt": date"
+    }
+  }
+}
+```
+
