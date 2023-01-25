@@ -126,10 +126,6 @@ You can see the files used to perform the API testing using Postman at the follo
     "book": {
       "id": string,
       "name": string,
-      "publisher": string,
-
-      "id": string,
-      "name": string,
       "year": year,
       "author": string,
       "summary": string,
